@@ -1,0 +1,59 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-outer .btn {
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #555;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+.btn-outer .btn:hover {
+  background-color: transparent;
+}
+.btn-outer .btn:before, .btn-outer .btn:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-outer .btn:hover:before {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.btn-outer .btn:hover:after {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}

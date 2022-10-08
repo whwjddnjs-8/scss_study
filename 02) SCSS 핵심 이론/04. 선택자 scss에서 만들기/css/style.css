@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .frame {
+    margin: 15px;
+
+    .btn {
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+
+        // 띄어쓰기 있으면 절대 안됨 띄어쓰기 있으면 자손선택자가 되니까.
+        &.confirm {
+            background-color: yellowgreen;
+        }
+
+        &.warning {
+            background-color: crimson;
+        }
+    }
+} */
+.frame {
+  margin: 15px;
+}
+
+button.btn {
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button.confirm {
+  background-color: yellowgreen;
+}
+
+button.warning {
+  background-color: crimson;
+}

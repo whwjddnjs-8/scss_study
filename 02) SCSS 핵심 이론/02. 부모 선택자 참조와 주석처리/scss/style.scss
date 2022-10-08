@@ -1,0 +1,58 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-outer {
+    .btn {
+        color: #fff;
+        text-transform: uppercase;
+        width: 300px;
+        // border: 1px solid #000;
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-color: #555;
+        transition: 0.3s;
+        position: relative;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            width: inherit;
+            height: inherit;
+            border: 1px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        &:hover:before {
+            opacity: 1;
+            transform: rotate(45deg);
+        }
+
+        &:hover:after {
+            opacity: 1;
+            transform: rotate(-45deg);
+        }
+    }
+}
