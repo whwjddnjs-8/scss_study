@@ -1,0 +1,24 @@
+// 전역변수
+$crimson : crimson;
+$black : #000;
+
+.portfolio {
+    // 지역변수
+    color: $crimson;
+
+    h1 {
+        color: $black;
+    }
+}
+
+.headline {
+    color: $crimson;
+
+    h2 {
+        color: $black;
+    }
+}
+
+.test {
+    text-align: center;
+}

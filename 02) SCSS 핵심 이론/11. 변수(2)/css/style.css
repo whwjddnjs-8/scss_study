@@ -1,0 +1,64 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+/* Protfolio */
+.portfolio {
+  padding: 20px;
+}
+.portfolio h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.portfolio .portfolio-items {
+  width: 1200px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.portfolio .portfolio-items .portfolio-item {
+  border: 1px solid #000;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(1) {
+  background-image: url("../images/blog-post-01.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(2) {
+  background-image: url("../images/blog-post-02.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(3) {
+  background-image: url("../images/blog-post-03.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(4) {
+  background-image: url("../images/blog-post-04.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(5) {
+  background-image: url("../images/blog-post-05.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(6) {
+  background-image: url("../images/blog-post-06.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(7) {
+  background-image: url("../images/blog-post-07.jpg");
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(8) {
+  background-image: url("../images/blog-post-08.jpg");
+}
