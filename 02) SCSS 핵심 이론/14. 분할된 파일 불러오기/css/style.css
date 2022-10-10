@@ -1,0 +1,25 @@
+/* Import SCSS Files */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+header {
+  background-color: yellowgreen;
+}
+
+footer {
+  background-color: royalblue;
+}
+
+/* Google Web Font */
+* {
+  font-family: "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #ddd;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}

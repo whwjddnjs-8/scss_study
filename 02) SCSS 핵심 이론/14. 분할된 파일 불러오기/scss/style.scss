@@ -1,0 +1,19 @@
+/* Import SCSS Files */
+@import "header";
+@import "footer";
+@import "variables";
+@import "fonts";
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: $body-bgc;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
