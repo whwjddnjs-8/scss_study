@@ -1,0 +1,99 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.complete {
+  font-size: 18px;
+  width: 150px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  border: 3px solid royalblue;
+  color: royalblue;
+}
+.complete.complete:hover {
+  background-color: royalblue;
+  color: #fff;
+}
+.complete.loading:hover {
+  background-color: green;
+  color: #fff;
+}
+.complete.error:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.loading {
+  font-size: 18px;
+  width: 150px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  border: 3px solid green;
+  color: green;
+}
+.loading.complete:hover {
+  background-color: royalblue;
+  color: #fff;
+}
+.loading.loading:hover {
+  background-color: green;
+  color: #fff;
+}
+.loading.error:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.error {
+  font-size: 18px;
+  width: 150px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  border: 3px solid crimson;
+  color: crimson;
+}
+.error.complete:hover {
+  background-color: royalblue;
+  color: #fff;
+}
+.error.loading:hover {
+  background-color: green;
+  color: #fff;
+}
+.error.error:hover {
+  background-color: crimson;
+  color: #fff;
+}

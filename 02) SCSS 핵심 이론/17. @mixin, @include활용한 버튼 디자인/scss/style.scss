@@ -1,0 +1,66 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+//Variables
+$complete-btn : royalblue;
+$loading-btn : green;
+$error-btn : crimson;
+$notice-btn-fs : 18px;
+
+// Button Mixin
+@mixin notice-button {
+    font-size: $notice-btn-fs;
+    width: 150px;
+    padding: 7px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.35s;
+
+    &.complete:hover {
+        background-color: $complete-btn;
+        color: #fff;
+    }
+
+    &.loading:hover {
+        background-color: $loading-btn;
+        color: #fff;
+    }
+
+    &.error:hover {
+        background-color: $error-btn;
+        color: #fff;
+    }
+}
+
+.complete {
+    @include notice-button();
+    border: 3px solid $complete-btn;
+    color: $complete-btn;
+}
+
+.loading {
+    @include notice-button();
+    border: 3px solid $loading-btn;
+    color: $loading-btn;
+}
+
+.error {
+    @include notice-button();
+    border: 3px solid $error-btn;
+    color: $error-btn;
+}
