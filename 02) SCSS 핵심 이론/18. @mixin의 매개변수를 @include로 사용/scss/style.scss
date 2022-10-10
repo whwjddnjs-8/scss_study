@@ -1,0 +1,45 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+//Buttons Mixin
+@mixin border-style($width, $style, $color) {
+    border: $width $style $color;
+}
+
+@mixin button-padding($updown, $leftright) {
+    padding: $updown $leftright;
+}
+
+.buttons {
+    button {
+        // width: 200px;
+        padding: 7px;
+        background-color: #fff;
+        outline: none;
+        cursor: pointer;
+        font-size: 18px;
+        @include button-padding(20px, 150px);
+
+        &.approval {
+            @include border-style(5px, solid, red);
+        }
+
+        &.refuse {
+            @include border-style(5px, dashed, royalblue);
+        }
+    }
+}
