@@ -1,0 +1,31 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+.btn a:visited {
+  color: crimson;
+}
+.btn a:active {
+  color: royalblue;
+}
+.btn a:hover {
+  color: yellowgreen;
+}
