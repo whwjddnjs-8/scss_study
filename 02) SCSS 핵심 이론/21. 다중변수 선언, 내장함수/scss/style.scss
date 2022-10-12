@@ -1,0 +1,48 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+$color: (
+    //이름: 값, 이름: 값, 이름:값
+    font-primary : #2d3436,
+    font-secondary : #636e72,
+    font-focus: #0984e3,
+    bgc-primary: #dfe6e9,
+    bgc-secondary: #b2bec3,
+);
+
+$headline-font: (
+    headline-font-large: 45px,
+    headline-font-medium : 32px,
+    headline-font-small :22px
+);
+
+$font-family: (
+    kor : "Noto Sans KR",
+    eng : 'Montserrat'
+);
+
+body {
+    background-color: map-get($map: $color, $key: bgc-primary);
+    margin: 0;
+    font-family: map-get($map: $font-family, $key: kor);
+}
+
+.frame {
+    h1 {
+        color: map-get($map: $color, $key: font-primary);
+        font-size: map-get($map: $headline-font, $key: headline-font-large);
+        font-family: map-get($map: $font-family, $key: eng);
+    }
+
+    h2 {
+        font-size: map-get($map: $headline-font, $key: headline-font-medium);
+    }
+
+    h3 {
+        font-size: map-get($map: $headline-font,
+                $key: headline-font-small);
+    }
+}
