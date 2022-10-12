@@ -1,0 +1,30 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+body {
+  font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 45px;
+  color: crimson;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 30px;
+  color: royalblue;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 22.5px;
+  color: yellowgreen;
+}
