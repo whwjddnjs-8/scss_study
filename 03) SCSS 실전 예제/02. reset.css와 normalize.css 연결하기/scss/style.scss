@@ -1,0 +1,27 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+// @import "reset";
+// @import "normalize";
+@import "custom-reset";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+/* section {
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        margin: 10px 0;
+    }
+} */
