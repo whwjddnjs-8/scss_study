@@ -1,0 +1,60 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Buttons CSS */
+.basic, .critical-error, .warning, .error, .success {
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  width: 170px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.basic:active, .critical-error:active, .warning:active, .error:active, .success:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.success {
+  background-color: #2ecc71;
+}
+
+.error {
+  background-color: #f79f1f;
+}
+
+.warning {
+  background-color: #EE5A24;
+}
+
+.critical-error {
+  background-color: #EA2027;
+}
