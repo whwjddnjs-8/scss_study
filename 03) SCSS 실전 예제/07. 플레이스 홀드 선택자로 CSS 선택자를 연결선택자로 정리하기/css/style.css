@@ -1,0 +1,67 @@
+/* Google Web Fonts CDN */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+/* @mixin circle-box {
+    border: 5px solid #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: tomato;
+} */
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Mixin and Include */
+/* .items {
+    div {
+        @include circle-box();
+
+        &:nth-child(1) {
+            background-color: royalblue;
+        }
+
+        &:nth-child(2) {
+            background-color: yellowgreen;
+        }
+
+        &:nth-child(3) {
+            background-color: tomato;
+        }
+    }
+
+} */
+/* Extend */
+.items div {
+  border: 5px solid #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.items div:nth-child(1) {
+  background-color: royalblue;
+}
+.items div:nth-child(2) {
+  background-color: yellowgreen;
+}
+.items div:nth-child(3) {
+  background-color: tomato;
+}
